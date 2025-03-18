@@ -11,37 +11,39 @@
         <h3>Ramen Rater</h3>
     </header>
     <main>
-        <section>
-            <h2>Top Ramen</h2>
-            <p>Here are the top rated ramen brands.</p>
-            <div id="top-ramen">
-                <img src="gyukotsu.jpg" alt="" width="200">
-                <img src="kojiro.jpg" alt="" width="200">
-                <img src="nirvana.jpg" alt="" width="200">
-                <img src="shoyu.jpg" alt="" width="200">
-                <img src="naruto.jpg" alt="" width="200">
-            </div>
-        </section>
-        <h2>Rate a Ramen</h2>
-        <p>Rate your ramen and see what others have rated it.</p>
-        <h3>Rate a Ramen</h3>
-        <form id="new-ramen">
-            <label for="brand">Brand:</label>
-            <input type="text" id="brand" name="brand" required>
-            <label for="variety">Variety:</label>
-            <input type="text" id="variety" name="variety" required>
-            <label for="style">Style:</label>
-            <input type="text" id="style" name="style" required>
-            <label for="country">Country:</label>
-            <input type="text" id="country" name="country" required>
-            <label for="stars">Stars:</label>
-            <input type="number" id="stars" name="stars" required>
-            <button type="submit">Rate</button>
-        </form>
-    
-         
+        <div id="ramen">
+            <img src="shoyu.jpg" alt="">
+            <img src="gyukotsu.jpg" alt="">
+            <img src="naruto.jpg" alt="">
+            <img src="nirvana.jpg" alt="">
+            <img src="kojiro.jpg" alt="">
+            
+        </div>
+        <div id="ramen-info">
+            <h4>Shoyu Ramen</h4>
+            <img src="shoyu.jpg" alt="" width="200">
+            <p>Restaurant: Shoyu Ramen</p>
+            <p>Rating: 5/5</p>
+            <p>Comment: The best ramen I have ever had!</p>
+        </div>
+
+     <form id="new-ramen">
+         <h4>Add New Ramen</h4>
+         <label for="name">Name: </label>
+         <input type="text" name="name" id="new-name" />
+           <label for="restaurant">Restaurant: </label>
+         <input type="text" name="restaurant" id="new-restaurant" />
+         <label for="image">Image: </label>
+         <input type="text" name="image" id="new-image" />
+         <label for="rating">Rating: </label>
+         <input type="number" name="rating" id="new-rating" />
+         <label for="new-comment">Comment: </label>
+         <textarea name="new-comment" id="new-comment"></textarea>
+         <input type="submit" value="Create" />
+     </form>
+
+
     </main>
-    <script src="./index.js"></script>
 
 </body>
 </html>
