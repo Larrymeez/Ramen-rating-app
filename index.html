@@ -11,20 +11,58 @@
         <h3>Ramen Rater</h3>
     </header>
     <main>
-        <div id="ramen">
-            <img src="shoyu.jpg" alt="">
-            <img src="gyukotsu.jpg" alt="">
-            <img src="naruto.jpg" alt="">
-            <img src="nirvana.jpg" alt="">
-            <img src="kojiro.jpg" alt="">
-            
+        <div id="ramen-menu" class="image-container">
+            <div class="image-item" data-name="Shoyu Ramen" data-description="Healthy choice" data-rating="5/5" data-image="shoyu.jpg">
+                <img src="shoyu.jpg" alt="Shoyu Ramen">
+                <div class="image-info">
+                    <h4>Shoyu Ramen</h4>
+                    <p>Healthy choice</p>
+                    <p>Rating: 5/5</p>
+                </div>
+            </div>
+            <div class="image-item" data-name="Gyukotsu Ramen" data-description="Very tasty" data-rating="4/5" data-image="gyukotsu.jpg">
+                <img src="gyukotsu.jpg" alt="Gyukotsu Ramen">
+                <div class="image-info">
+                    <h4>Gyukotsu Ramen</h4>
+                    <p>Very tasty</p>
+                    <p>Rating: 4/5</p>
+                </div>
+            </div>
+            <div class="image-item" data-name="Naruto Ramen" data-description="Very delicious" data-rating="4/5" data-image="naruto.jpg">
+                <img src="naruto.jpg" alt="Naruto Ramen">
+                <div class="image-info">
+                    <h4>Naruto Ramen</h4>
+                    <p>Very delicious</p>
+                    <p>Rating: 4/5</p>
+                </div>
+            </div>
+            <div class="image-item" data-name="Nirvana Ramen" data-description="Highly recommended" data-rating="5/5" data-image="nirvana.jpg">
+                <img src="nirvana.jpg" alt="Nirvana Ramen">
+                <div class="image-info">
+                    <h4>Nirvana Ramen</h4>
+                    <p>Highly recommended</p>
+                    <p>Rating: 5/5</p>
+                </div>
+            </div>
+            <div class="image-item" data-name="Kojiro Ramen" data-description="Best Kojiro I've ever had!" data-rating="4/5" data-image="kojiro.jpg">
+                <img src="kojiro.jpg" alt="Kojiro Ramen">
+                <div class="image-info">
+                    <h4>Kojiro Ramen</h4>
+                    <p>Best Kojiro I've ever had!</p>
+                    <p>Rating: 4/5</p>
+                </div>
+            </div>
         </div>
-        <div id="ramen-info">
-            <h4>Shoyu Ramen</h4>
-            <img src="shoyu.jpg" alt="" width="200">
-            <p>Restaurant: Shoyu Ramen</p>
-            <p>Rating: 5/5</p>
-            <p>Comment: The best ramen I have ever had!</p>
+        
+        <!-- Popup Modal -->
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <button class="close" id="close-popup">&times;</button>
+                <img id="popup-image" src="" alt="Ramen Image" style="width: 100%; height: auto;">
+                <h4 id="popup-title"></h4>
+                <p id="popup-description"></p>
+                <p id="popup-rating"></p>
+            </div>
         </div>
 
      <form id="new-ramen">
@@ -44,6 +82,7 @@
 
 
     </main>
+    <script src="index.js"></script>
 
 </body>
 </html>
